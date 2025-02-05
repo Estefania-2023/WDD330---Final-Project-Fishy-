@@ -186,12 +186,6 @@ nav {
   padding: 0;
 }
 
-/* ADD RECIPE BTTN STYLES */
-.favorite-btn.shake {
-  animation: shake 0.5s ease;
-  color: red;
-}
-
 /* Explore BTTN STYLES */
 .explore-button {
   font-size: var(--font-base);
