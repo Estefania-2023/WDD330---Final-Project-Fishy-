@@ -1,0 +1,23 @@
+{
+  "name": "seafood-recipes-finder",
+  "version": "1.0.0",
+  "description": "WDD330 final project",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html",
+    "lint": "eslint \"**/*.{js,jsx,ts,tsx}\"",
+    "format": "prettier --write ."
+  },
+  "author": "Estefanía Ortíz",
+  "dependencies": {
+    "parcel": "^2.12.0"
+  },
+  "devDependencies": {
+    "eslint": "^9.12.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "prettier": "^3.3.3"
+  },
+  "keywords": [],
+  "license": "ISC"
+}
