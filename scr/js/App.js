@@ -16,10 +16,15 @@ function Header() {
     href: '#/recipes',
     textContent: 'Recipes',
   });
+  const categoryLink = createElement('a', {
+    href: '#/category',
+    textContent: 'Category',
+  });
 
   const nav = createElement('nav', {}, [
     homeLink,
-    recipeLink
+    recipeLink,
+    categoryLink
   ]);
 
   return createElement('header', {}, [appTitle, nav]);
