@@ -71,5 +71,4 @@ function RecipesView() {
   return createElement('div', {}, [title, recipesSection]);
 }
 
-
 export default RecipesView;

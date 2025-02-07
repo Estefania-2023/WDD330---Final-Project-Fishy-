@@ -17,10 +17,7 @@ function Header() {
     textContent: 'Recipes',
   });
 
-  const nav = createElement('nav', {}, [
-    homeLink,
-    recipeLink
-  ]);
+  const nav = createElement('nav', {}, [homeLink, recipeLink]);
 
   return createElement('header', {}, [appTitle, nav]);
 }
@@ -39,7 +36,7 @@ function Footer() {
 
   const contactInfo = createElement('div', {}, [
     createElement('p', { textContent: 'Contact Us' }),
-    createElement('p', { textContent: 'Phone: +51 916 165 703' }),
+    createElement('p', { textContent: 'Phone: +51 976 441 568' }),
     createElement('p', { textContent: 'Email: fishype@gmail.com' }),
     createElement('p', {
       textContent: 'Address: 6711 Abanto St, Carlsbad, CA 92009',

@@ -9,17 +9,17 @@ function HomeView() {
     className: 'hero',
   });
   const title = createElement('h2', {
-    textContent: 'Get to Know US',
+    textContent: 'Get to Know Us!',
     className: 'title-heading',
   });
   const intro = createElement('p', {
     textContent:
-      "Welcome to Fishy, your go-to source for delightful pastry recipes! Based in the heart of the baking community, PastryPal is dedicated to helping you discover the joy of homemade baked goods. From flaky croissants to rich, decadent cakes, our mission is to provide you with easy-to-follow recipes, sourced from renowned bakers for every skill level. Whether you're a seasoned baker or just starting out, our collection features a variety of delicious options and classic pastries.",
+      "Welcome to Fishy, your go-to source for delightful seafood recipes! Based in the heart of community of seafood makers, Fishy is dedicated to helping you discover the joy of homemade seafood goods and would makes you to disfrut all the exquisite plates. From Grilled Portuguese sardines, Spring onion and prawn empanadas, our mission is to provide you with easy-to-follow recipes, sourced from renowned chefs for every skill level. Whether you're a seasoned cooker or just starting out, our collection features a variety of delicious options and classic seafoods.",
     className: 'intro-paragraph',
   });
   const invite = createElement('p', {
     textContent:
-      'At Fishy, we believe that baking should be accessible and rewarding—a way to bring loved ones together, one pastry at a time. Come explore, create, and share the love of baking with us!',
+      'At Fishy, we believe that cooking seafood food should be accessible and rewarding—a way to bring loved ones together, a delicious seafood plate at a time. Come explore and create with the magnificous recipes!',
     className: 'intro-paragraph',
   });
 
