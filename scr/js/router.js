@@ -1,5 +1,6 @@
 import { createElement } from './utils.js';
 import HomeView from './HomeView.js';
+import FavoriteRecipesView from './FavoritesView.js';
 import RecipeView from './RecipesView.js';
 
 export function initRouter(mainView) {
@@ -15,6 +16,9 @@ export function initRouter(mainView) {
         break;
       case '#/recipes':
         updateView(RecipeView());
+        break;
+      case '#/favoriterecipes':
+        updateView(FavoriteRecipesView());
         break;
       default:
         updateView(createElement('h3', { textContent: '404 Page Not Found' }));

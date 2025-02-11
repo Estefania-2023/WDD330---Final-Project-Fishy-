@@ -16,8 +16,16 @@ function Header() {
     href: '#/recipes',
     textContent: 'Recipes',
   });
+  const favoriterecipesLink = createElement('a', {
+    href: '#/favoriterecipes',
+    textContent: 'Favorites',
+  });
 
-  const nav = createElement('nav', {}, [homeLink, recipeLink]);
+  const nav = createElement('nav', {}, [
+    homeLink,
+    recipeLink,
+    favoriterecipesLink,
+  ]);
 
   return createElement('header', {}, [appTitle, nav]);
 }

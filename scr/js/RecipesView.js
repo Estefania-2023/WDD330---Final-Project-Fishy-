@@ -71,4 +71,19 @@ function RecipesView() {
   return createElement('div', {}, [title, recipesSection]);
 }
 
+function toggleFavorite(recipe, button) {
+  let favorites = JSON.parse(localStorage.getItem('favorites')) || [];
+  const isFavorite = favorites.some((fav) => fav.idMeal === recipe.idMeal);
+
+  if (isFavorite) {
+    favorites = favorites.filter((fav) => fav.idMeal !== recipe.idMeal);
+  } else {
+    favorites.push(recipe);
+  }
+
+  localStorage.setItem('favorites', JSON.stringify(favorites));
+  button.classList.add('shake');
+  setTimeout(() => button.classList.remove('shake'), 500);
+}
+
 export default RecipesView;
