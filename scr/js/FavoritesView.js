@@ -18,6 +18,14 @@ function FavoriteRecipesView() {
       'div',
       { className: 'recipe-card favorite-card' },
       [
+        createElement('h3', { textContent: recipe.strMeal }),
+        createElement('button', {
+          textContent: 'X',
+          className: 'remove-button',
+          onclick: () => {
+            removeFavorite(recipe.idMeal);
+          },
+        }),
         createElement('img', {
           src: recipe.strMealThumb,
           alt: recipe.strMeal,
@@ -80,6 +88,13 @@ function FavoriteRecipesView() {
         createElement('p', {
           textContent: recipe.strInstructions,
           className: 'recipe-instructions',
+        }),
+        createElement('button', {
+          textContent: 'X',
+          className: 'remove-button',
+          onclick: () => {
+            removeFavorite(recipe.idMeal);
+          },
         }),
       ]);
 
