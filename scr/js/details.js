@@ -90,3 +90,5 @@ function displayResults2(data) {
 }
 apiFetch2(url2);
 
+//hide and show weather
+

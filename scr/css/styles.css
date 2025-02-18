@@ -449,6 +449,10 @@ footer a {
   .favorite-card {
     max-width: 450px;
   }
+  .main-weather{
+    position: fixed;
+    width: 200px;
+  height: 500px;}
 }
 
 /* Scroll-to-top button styling */
@@ -508,21 +512,46 @@ footer a {
 .weather figcaption {
   text-align: center;
   background: none;
-  color: var(--accent1-color);
+  color: var(--accent-color);
 }
 #weather-icon {
   padding: 10px;
 }
 .events p {
-  color: var(--accent1-color);
+  color: var(--accent-color);
   text-align: center;
   margin-top: 15px;
   font-size: 24px;
 }
 .main-weather{
-  position: fixed;
   bottom: 0;
-  background-color: #97d4cc;
-  width: 200px;
-  height: 500px
+  background-color: var(--tertiary-color);
+}
+.see_weather{
+  position:fixed
+  
+}
+.hide{
+  display:none
+}
+
+@media (max-width: 1024px) {
+  /*1fr 1fr*/
+
+  .main-weather{
+    display: inline-flex;
+    text-align:center;
+    /*center div*/
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .events{
+    width:200px
+  }
+  .weather{
+    width: 200px;
+    float:right;
+
+  }
 }
