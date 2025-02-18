@@ -9,6 +9,7 @@ function RecipesView() {
   const recipesSection = createElement('div', {
     className: 'RV-recipes-section',
   });
+  
 
   getFeaturedRecipes().then((recipes) => {
     const recipesPromises = recipes.map((recipe) =>
@@ -85,5 +86,6 @@ function toggleFavorite(recipe, button) {
   button.classList.add('shake');
   setTimeout(() => button.classList.remove('shake'), 500);
 }
+
 
 export default RecipesView;

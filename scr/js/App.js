@@ -6,7 +6,7 @@ function Header() {
     textContent: 'Fishy',
     className: 'heading',
   });
-
+ 
   // nav items
   const homeLink = createElement('a', {
     href: '#/home',
@@ -20,14 +20,15 @@ function Header() {
     href: '#/favoriterecipes',
     textContent: 'Favorites',
   });
-
+ 
   const nav = createElement('nav', {}, [
     homeLink,
     recipeLink,
     favoriterecipesLink,
   ]);
-
+ 
   return createElement('header', {}, [appTitle, nav]);
+  
 }
 
 function Footer() {

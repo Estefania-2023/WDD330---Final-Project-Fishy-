@@ -8,30 +8,31 @@
     <link rel="icon" href="scr/images/favicon.ico" />
   </head>
   <body>
+    
     <div id="root"></div>
-
+    
     <script type="module" src="scr/js/App.js"></script>
   <button id="scrollToTopBtn">&#8593;</button>
-<script>
-  // Get the button
-const scrollToTopBtn = document.getElementById("scrollToTopBtn");
-
-// Function to show or hide the button based on scroll position
-window.onscroll = function() {
-  if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-    scrollToTopBtn.classList.add('show');
-  } else {
-    scrollToTopBtn.classList.remove('show');
-  }
-};
-
-// Function to smoothly scroll back to the top
-scrollToTopBtn.addEventListener("click", function() {
-  window.scrollTo({
-    top: 0,
-    behavior: "smooth"
-  });
-});
-</script>
+<script type="module" src="scr/js/details.js"></script>
+<div class="main-weather">
+  <div class="events">
+      <h3 class="box-title">Weather Forecast</h3>
+          <p id="todayc"></p>
+          <p id="tomorrowc"></p>
+          <p id="atomorrowc"></p>
+  </div>
+  <div class="weather">
+      <h3 class="box-title">Weather</h3>
+      <div class="box-content">
+          <span id="weather-info"></span>
+          <h4>Lima, Peru</h4>
+          <p><span id="current-temp">__</span></p>
+          <figure>
+              <img id="weather-icon" src="#" alt="Weather Icon" width="64" height="64">
+              <figcaption></figcaption>
+          </figure>
+      </div>   
+  </div>
+</div>
   </body>
 </html>

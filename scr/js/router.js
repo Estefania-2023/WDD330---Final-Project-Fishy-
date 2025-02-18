@@ -29,9 +29,12 @@ export function initRouter(mainView) {
   const defaultHash = window.location.hash || '#/home';
   hashToRoute(defaultHash);
 
+  
+
   window.addEventListener('hashchange', (evt) => {
     const newUrl = new URL(evt.newURL);
     const hash = newUrl.hash;
     hashToRoute(hash);
   });
+
 }
